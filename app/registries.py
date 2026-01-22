@@ -6,7 +6,6 @@ from print_strategies import ConsolePrinter, ReversePrinter
 from serializers import JsonSerializer, XmlSerializer
 
 
-# Простий DI-реєстр (відповідає Open/Closed: додаємо нові типи без змін клієнтів)
 DISPLAY_REGISTRY: Dict[str, DisplayStrategy] = {
     "console": ConsoleDisplay(),
     "reverse": ReverseDisplay(),
